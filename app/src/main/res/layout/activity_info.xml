@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#000000">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:id="@+id/activity_main">
+
+            <TextView
+                android:id="@+id/extra_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:text="Hope you are enjoying this Bible app! \n\n I understand that the Bible versions are limited (World English Bible and King James Version) but these are all I have access to. \n\n Any feedback would be appreciated! \nGod Bless!"
+                android:textColor="@color/cardview_light_background"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/fav_verses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/extra_info"
+                android:text="Here are some of my favourite verses:"
+                android:textColor="@color/lightBlue"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/fav_verses_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/fav_verses"
+                android:text="'Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.' \nPhilippians 4:6 NIV \n\n'Cast all your anxiety on him because he cares for you.' \n1 Peter 5:7 NIV \n\n'Pride brings a person low, but the lowly in spirit gain honor.' \nProverbs 29:23 NIV"
+                android:textColor="@color/cardview_light_background"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+                android:padding="7dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/fav_verses_v"
+                android:text="Made with love by Emmanuel Carter\nourmanna.com\nbible-api.com"
+                android:textColor="@color/orange"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/verse_row"
+    android:padding="1dp">
+
+    <TextView
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:tooltipText="slide to delete"
+        android:id="@+id/verse_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"/>
+
+</LinearLayout>
